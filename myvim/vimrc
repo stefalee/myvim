@@ -1,0 +1,34 @@
+"normal
+set fileencodings=utf-8,cp936,big5,euc-jp,euc-kr,latin1,ucs-bom    
+set fileencodings=utf-8,gbk    
+set ambiwidth=double   
+set smartindent  
+set smarttab  
+set expandtab  
+set tabstop=4  
+set softtabstop=4  
+set shiftwidth=4  
+set backspace=2  
+set textwidth=79  
+set nu
+
+
+"WinManager
+let g:winManagerWindowLayout='FileExplorer|TagList'
+nmap wm :WMToggle<cr>
+
+"syntax
+syntax enable
+syntax on
+
+"taglist
+let Tlist_Show_One_File=1
+let Tlist_Exit_Only_Window=1
+
+"set ctags
+set tags=/home/wlp/git/ZDC/tags
+set tags=/usr/lib64/python2.7/tags
+
+"set pydiction
+filetype plugin on
+let g:pydiction_location='~/.vim/after/ftplugin/pydiction/complete-dict'
